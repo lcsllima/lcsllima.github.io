@@ -1,0 +1,53 @@
+
+.content-box{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px 300px;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	
+	padding: 50px;
+		
+}
+
+.content{
+	
+	background-color: #FAEBD7;
+	box-shadow: 5px 5px;
+	border-radius: 3px;
+	
+	/* padding: 25px; */
+	
+	font: 32px Arial;
+	font-height: 900;
+	
+	color: #708090;
+	text-align: center;
+	justify-content: center;
+
+}
+
+.content:hover{
+	color: #FAEBD7;
+	background-color: #708090;
+}
+
+
+.texto {
+	
+  position: relative;
+  top: 8px;
+  left: 16px;
+}
+
+.imagens{
+	float: left;
+    width:  100%;
+    height: 200px;
+    object-fit: cover;
+	padding: 15px;
+}
+
+
+
