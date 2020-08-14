@@ -1,9 +1,13 @@
 #bg-body{
-	background-color: #85929E ;
+	
+	/* background-color: #FFFAF0; */
 	
 }
+
 section{
-	background-color: #85929E;
+	
+	/* background-color: #FFFAF0; */
+	
 }
 
 .content-box{
@@ -18,18 +22,30 @@ section{
 		
 }
 
+.slot {
+	background-color: #00008B;
+	height: 400px;
+	width: 100%;
+	margin-top: 100px;
+	color: white;
+	
+	border-top: 6px solid #FFD700;
+}
+
 .content{
 	
-	background-color: #34495E;
+	background-color: #00008B;
 	box-shadow: 5px 5px;
 	border-radius: 3px;
 	
 	/* padding: 25px; */
 	
-	font: 32px Arial;
+	
+	font-family: 'Baloo Tamma 2', cursive;
+	font-size: 32px;
 	font-height: 900;
 	
-	color: red;
+	color: #FFD700;
 	text-align: center;
 	justify-content: center;
 
@@ -56,5 +72,10 @@ section{
 	padding: 15px;
 }
 
-
-
+#certificado{
+	width:1117px;
+	height:864px;
+	border: 3px solid #00008B;
+	border-radius: 5px;
+	
+}
