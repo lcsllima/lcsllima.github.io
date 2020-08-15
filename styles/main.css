@@ -1,3 +1,9 @@
+:root{
+	--color-y: #FFD700;
+	--texto: 'Baloo Tamma 2', cursive;
+}
+
+ 
 #bg-body{
 	
 	/* background-color: #FFFAF0; */
@@ -22,15 +28,6 @@ section{
 		
 }
 
-.slot {
-	background-color: #00008B;
-	height: 400px;
-	width: 100%;
-	margin-top: 100px;
-	color: white;
-	
-	border-top: 6px solid #FFD700;
-}
 
 .content{
 	
@@ -41,11 +38,11 @@ section{
 	/* padding: 25px; */
 	
 	
-	font-family: 'Baloo Tamma 2', cursive;
+	font-family: var(--texto);
 	font-size: 32px;
 	font-height: 900;
 	
-	color: #FFD700;
+	color: var(--color-y);
 	text-align: center;
 	justify-content: center;
 
@@ -72,10 +69,48 @@ section{
 	padding: 15px;
 }
 
-#certificado{
-	width:1117px;
-	height:864px;
-	border: 3px solid #00008B;
-	border-radius: 5px;
+/* Certificações */
+
+.section-text {
 	
+	font: var(--texto);
+	
+	text-align: center;
+	
+	background-color: #00008B;
+	
+	height: 300px;
+	width: 100%;
+	margin-top: 100px;
+	color: white;
+	padding: 50px;
+	border-top: 6px solid var(--color-y);
 }
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16%;
+}
+
+.thumb {
+  border: 1px solid var(--color-y);
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.thumb:hover {
+	background-color: var(--color-y);
+}
+
