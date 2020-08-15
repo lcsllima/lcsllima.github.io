@@ -1,14 +1,10 @@
 :root{
-	--color-y: #FFD700;
+	--color-x: #222;
+	--color-y: #FFFFF0;
 	--texto: 'Baloo Tamma 2', cursive;
 }
 
- 
-#bg-body{
-	
-	/* background-color: #FFFAF0; */
-	
-}
+
 
 section{
 	
@@ -16,6 +12,36 @@ section{
 	
 }
 
+footer{
+	
+	text-align: center;
+	
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	
+	border-top: 6px solid var(--color-y);
+	background: #222;
+	color: var(--color-y);
+		
+}
+
+footer li img{
+	 cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+}
+.icones{
+	
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	
+}
 .content-box{
 	
 	display: grid;
@@ -30,10 +56,10 @@ section{
 
 
 .content{
-	
-	background-color: #00008B;
+	background-color: var(--color-x);
+	/* background-color: #00008B; */
 	box-shadow: 5px 5px;
-	border-radius: 3px;
+	border-radius: 20px;
 	
 	/* padding: 25px; */
 	
@@ -42,7 +68,7 @@ section{
 	font-size: 32px;
 	font-height: 900;
 	
-	color: var(--color-y);
+	color: gray;
 	text-align: center;
 	justify-content: center;
 
@@ -73,18 +99,22 @@ section{
 
 .section-text {
 	
-	font: var(--texto);
+	font: 32px var(--texto);
 	
 	text-align: center;
 	
-	background-color: #00008B;
+	background-color: var(--color-x);
 	
-	height: 300px;
+	height: 400px;
 	width: 100%;
-	margin-top: 100px;
-	color: white;
+	/* margin-top: 100px; */
+	color: var(--color-y);
 	padding: 50px;
 	border-top: 6px solid var(--color-y);
+}
+
+.habilidades {
+	height: 800px;
 }
 
 .row > .column {
@@ -113,4 +143,6 @@ section{
 .thumb:hover {
 	background-color: var(--color-y);
 }
+
+
 
