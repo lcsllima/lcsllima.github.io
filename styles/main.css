@@ -1,10 +1,14 @@
 :root{
 	--color-x: #222;
 	--color-y: #FFFFF0;
-	--texto: 'Baloo Tamma 2', cursive;
+	--texto: 'Gogh', cursive;
 }
 
 
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: flex;
+	flex-direction: column;
+}
 
 section{
 	
@@ -25,6 +29,8 @@ footer{
 	border-top: 6px solid var(--color-y);
 	background: #222;
 	color: var(--color-y);
+
+	justify-content: center;
 		
 }
 
@@ -55,30 +61,25 @@ li {
 }
 
 
-.content{
-	background-color: var(--color-x);
-	/* background-color: #00008B; */
-	box-shadow: 5px 5px;
+.content {
+	box-shadow: 0px 4px 10px -5px;
 	border-radius: 20px;
-	
-	/* padding: 25px; */
-	
-	
+	padding: 25px;
+
 	font-family: var(--texto);
-	font-size: 32px;
-	font-height: 900;
+	font-size: 25px;
 	
-	color: gray;
+	color: #000;
 	text-align: center;
 	justify-content: center;
-
 }
 
-.content:hover{
-	color: #FAEBD7;
-	background-color: #708090;
+.content:hover {
+	color: #000;
+	background-color: #c1c2c4;
+	animation-duration: 3s;
+	opacity: 0.3;
 }
-
 
 .texto {
 	
@@ -103,7 +104,7 @@ li {
 	
 	text-align: center;
 	
-	background-color: var(--color-x);
+	background-color: #1d1d22;
 	
 	height: 400px;
 	width: 100%;
@@ -111,6 +112,28 @@ li {
 	color: var(--color-y);
 	padding: 50px;
 	border-top: 6px solid var(--color-y);
+	border-radius: 18px;
+
+	background-color: #1d1d22;
+	color: #fff;
+	text-shadow: 6px 3px 4px black;
+
+}
+
+.section-text-head {
+	font: 22px var(--texto);
+	text-align: center;
+	background-color: var(--color-x);
+	height: 55px;
+	width: 100%;
+	/* margin-top: 100px */
+	color: var(--color-y);
+	padding: 6px;
+	  padding-top: 6px;
+	  padding-right: 6px;
+	  padding-bottom: 6px;
+	  padding-left: 6px;
+	border-top: 0px solid var(--color-y);
 }
 
 .habilidades {
@@ -136,7 +159,7 @@ li {
   border: 1px solid var(--color-y);
   border-radius: 4px;
   padding: 5px;
-  width: 200px;
+  width: 235px;
   transition: 0.3s;
 }
 
@@ -145,4 +168,9 @@ li {
 }
 
 
-
+#skills {
+	line-height: 3.0em;
+	background-color: #1d1d22;
+	color: #fff;
+	text-shadow: 6px 3px 4px black;
+}
