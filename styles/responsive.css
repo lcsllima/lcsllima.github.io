@@ -8,14 +8,14 @@
 	}
 	
 
-	.thumb {
+	/* .thumb {
 	  border: 1px solid var(--color-y);
 	  border-radius: 4px;
 	  padding: 5px;
 	  width: 215px;
 	  transition: 0.3s;
 	}
-	
+	 */
 
 }
 
@@ -40,7 +40,7 @@
 
 	}
 	
-	
+/* 	
 	.thumb {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr;
@@ -49,7 +49,7 @@
 	  padding: 5px;
 	  width: 190px;
 	  transition: 0.3s;
-	}
+	} */
 
 }
 
@@ -72,7 +72,7 @@
 	font-size: 16px;
 
 	}
-	
+/* 	
 	.thumb {
 	  border: 1px solid var(--color-y);
 	  border-radius: 4px;
@@ -80,7 +80,7 @@
 	  width: 50px;
 	  transition: 0.3s;
 	}
-	
+	 */
 	.section-text {
 	
 	font: 16px var(--texto);
