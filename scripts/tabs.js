@@ -25,7 +25,7 @@ function autoChangeTab() {
 
 window.addEventListener("load", function(event) {
     // Start auto-changing the tabs every 3 seconds
-    const autoChangeInterval = setInterval(autoChangeTab, 3000);
+    const autoChangeInterval = setInterval(autoChangeTab, 9000);
 
     // Add click event listeners to stop the auto-changing when a tab is clicked
     Array.from(tabs).forEach(function(tab, index) {

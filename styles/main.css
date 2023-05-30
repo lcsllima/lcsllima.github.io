@@ -2,6 +2,7 @@ body {
     background: #191c1e;
     overflow: hidden;
 }
+
 /* 
 .bg-animated {
     position: absolute;
@@ -131,12 +132,45 @@ body {
 }
 
 
-.leaf::before {
-    font-family: "FontAwesome";
-    content: "\f06c"; /* Código do ícone Space Invader */
-    color: rgb(67, 155, 33);
-    font-size: 2em;
+.sp-inv-green::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("../assets/icons/sp-inv-green.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
+.sp-inv-red::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url("../assets/icons/sp-inv-red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sp-inv-red.expanded, .sp-inv-green.expanded {
+    animation: explode 0.6s ease;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(0);
+    }
+}
+
+  
 
 @keyframes disappear {
     0% {
@@ -240,3 +274,13 @@ body {
     font-size: 14px;
     margin-left: 1em;
 }
+
+
+.counter {
+    display: none;
+    font-size: 16px;
+    margin: 1em;
+    color:#10c800;
+    font-family: 'PixelFont', sans-serif;
+}
+  

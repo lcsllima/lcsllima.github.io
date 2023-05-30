@@ -2,9 +2,9 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-const email = document.querySelector('.icon-email');
+const github = document.querySelector('.icon-github');
 
-email.addEventListener("click", function(event) {
+github.addEventListener("click", function(event) {
     event.preventDefault();
-    navigator.clipboard.writeText(email.dataset.outlook);
+    navigator.clipboard.writeText(github.dataset.outlook);
 });

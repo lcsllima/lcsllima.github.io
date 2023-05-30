@@ -3,12 +3,18 @@ let listLeafs = [];
 
 const fragment = document.createDocumentFragment();
 
+const counterElement = document.createElement("div");
+counterElement.classList.add("counter");
+document.querySelector(".bg-animated").appendChild(counterElement);
+
+let counter = 0;
+
 for (let i = 0; i < leafs; i++) {
     const leaf = document.createElement("div");
-    leaf.classList.add('leaf');
+    leaf.classList.add(i % 2 === 0 ? 'sp-inv-green' : 'sp-inv-red');
 
     listLeafs.push(leaf);
-    fragment.appendChild(leaf);
+    fragment.appendChild(leaf);    
 }
 
 document.querySelector(".bg-animated").appendChild(fragment);
@@ -41,7 +47,15 @@ listLeafs.forEach((el, i, ra) => {
     );
 
     el.addEventListener('click', function() {
-        el.style.display = 'none';
+      if (!this.classList.contains("expanded")) {
+        this.classList.add("expanded");
+        setTimeout(() => {
+          this.style.display = "none";
+          counter++;
+          counterElement.textContent = `Aliens encontrados: ${counter}`;
+          counterElement.style.display = "block";
+        }, 600);
+      }
     });
 
 });
